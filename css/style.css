@@ -1,0 +1,401 @@
+* {
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+}
+
+main {
+	padding-top: 100px;
+}
+
+/*Header*/
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: #fff;
+	width: 100%;
+	height: 100px;
+}
+
+header .header-brand {
+	font-family: sans-serif;
+	font-weight: 900;
+	font-size: 24px;
+	color: #111;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+}
+
+header nav ul {
+	width: fit-content;
+	display: block;
+	margin: 0 auto;
+}
+
+header nav ul li {
+	list-style: none;
+	display: inline-block;
+	float: left;
+	padding: 0 16px;
+}
+
+header nav ul li a {
+	font-family: garamond;
+	font-size: 18px;
+	color: #111;
+}
+
+header .header-cases {
+	display: none;
+}
+
+@media only screen and (min-width: 1000px){
+	header .header-brand {
+		margin: 31px 0 31px 75px;
+		text-align: left;
+		float: left;
+		line-height: 38px;
+		padding: 0 20px 0 40px;
+		border-right: 3px solid #111;
+	}
+
+	header nav ul {
+		margin-left: 20px;
+		float: left;
+	}
+
+	header nav ul li a {
+		line-height: 100px;
+	}
+	header .header-cases{
+		display: block;
+		float: right;
+		line-height: 28px;
+		margin: 30px 40px 0 0;
+		border: 1px solid gray;
+		border-radius: 2px;
+		font-family: garamond;
+		font-size: 16px;
+		color: #111;
+		padding: 0 18px;
+	}
+}
+
+/*INDEX*/
+.index-banner {
+	width: 100%; 
+	height: calc(100vh - 100px);
+	background-image: url('../asstes/showcase.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: table;
+}
+
+.vertical-align{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.index-banner h2 {
+	font-family: arial;
+	text-transform: uppercase;
+	font-size: 60px;
+	line-height: 70px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1 {
+	font-family: garamond;
+	font-size: 28px;
+	font-weight: 100;
+	font-style: italic;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 2px 3px #111;
+}
+
+.index-link div {
+	margin: 16px 16px 0;
+	width: calc(100% - 32px);
+	height: 100px;
+	background-color: #f2f2f2;
+}
+
+.index-link div h3 {
+	font-family: garamond;
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 100px;
+	color: #111;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+	.wrapper{
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	.index-banner {
+		height: 450px;
+	}
+
+	.index-banner h1 {
+		display: block;
+		width: 520px;
+		margin: 0 auto;
+	}
+	.index-link div h3 {
+		line-height: 200px;
+	}
+
+	.index-link {
+		padding-bottom: 20px;
+		display: flow-root;
+	}
+
+	.index-link div {
+		margin: 20px 10px 0;
+		height: 200px;
+		background-color: #f2f2f2;
+		float: left;
+	}
+
+	.index-boxlink-square{
+		width: calc(25% - 20px) !important;
+	}
+
+	.index-boxlink-rectangle{
+		width: calc(50% - 20px) !important;
+	}
+}
+
+/*CASES*/
+
+.cases-links {
+	overflow: hidden;
+}
+
+.cases-links .wrapper div {
+	width: calc(100% - 40px);
+	height: 230px;
+	margin: 20px 20px 0;
+	background-color: #e3e3e3;
+	float: left;
+}
+
+.cases-links .wrapper h2 {
+	font-family: garamond;
+	font-size: 28px;
+	font-weight: 400;
+	padding-top: 18px;
+	color: #111;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-align: center;
+	display: block;
+}
+
+.cases-links .wrapper div p {
+	font-family: garamond;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 230px;
+	color: #111;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.cases-links .wrapper a[href="case-1.html"] div p {
+	color: slateblue;
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+	.cases-links .wrapper div {
+		width: 230px;
+		margin: 20px 10px 0;
+		float: left;
+	}
+} 
+
+
+/*CASE*/
+	.case-vid h2 {
+		font-family: garamond;
+		font-size: 28px;
+		font-weight: 400;
+		color: slateblue;
+		text-transform: capitalize;
+		text-align: center;	
+	}
+
+	.case-vid video {
+		display: block;
+		margin: 30px auto;
+		width: 80%;
+	}
+
+	.case-vid article h3 {
+		font-family: garamond;
+		font-size: 28px;
+		font-weight: 400;
+		line-height: 50px;
+		color: #111;
+		text-transform: capitalize;	
+		text-align: center;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.case-vid article p {
+		font-family: garamond;
+		font-size: 16px;
+		font-weight: 200;
+		line-height: 22px;
+		color: #111;
+		column-count: 1;
+		text-align: justify;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.case-vid .wrapper div {
+		width: 80%;
+		height: 250px;
+		background-color: #e3e3e3;
+		margin: 15px auto;
+		text-align: center;	
+	}
+
+	.case-vid .wrapper .tbl {
+		display: table;
+	}
+	
+	.case-vid .wrapper address {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.case-vid .wrapper h3 {
+		font-family: garamond;
+		font-size: 28px;
+		font-weight: 600;
+		font-style: none;
+		color: #111;
+	}
+
+	.case-vid .wrapper span {
+		display: block;
+		font-family: garamond;
+		font-size: 22px;
+	}
+
+
+
+@media only screen and (min-width: 550px) and (max-width: 999px) {
+	
+	.case-vid article h3 {
+		text-align: left;
+	}
+	.case-vid article p {
+		column-count: 2;
+		column-gap: 20px;
+	}
+
+}
+
+@media only screen and (min-width: 1000px) {  
+	
+	.case-vid article h3 {
+		text-align: left;
+		width: 90%;
+	}
+
+	.case-vid article p {
+		column-count: 3;
+		column-gap: 20px;
+		width: 90%;
+	}
+
+	.case-vid .wrapper div {
+		width: 90%;
+	}
+
+}
+/*Footer*/
+
+footer {
+	width: calc(100% - 80px);
+	padding: 40px 40px;
+	margin-top: 20px;
+	background-color: #111;
+	display: flow-root;
+}
+
+footer ul {
+	width: fit-content;
+	float: left;
+	padding-left: 20px;
+}
+
+footer ul li{
+	list-style: none;
+	display: block;
+}
+
+footer ul li a {
+	font-family: garamond;
+	font-size: 16px;
+	line-height: 32px;
+	color: #fff;
+}
+
+.footer-links-cases {
+	display: none;
+}
+
+.footer-icons {
+	width: 50px;
+	float: right;
+}
+
+.footer-icons img {
+	width: 100%;
+	margin-bottom: 5px;
+	border-radius: 50%;
+}
+
+@media only screen and (min-width: 1000px) {
+
+	.footer-links-cases {
+		display: block;
+	}
+
+	footer ul li p {
+		font-family: garamond;
+		font-size: 18px;
+		line-height: 32px;
+		color: #fff;
+	}
+
+	footer ul {
+		padding-right: 30px;
+	}
+}
